@@ -24,12 +24,12 @@
             if($role == 'student'){
                 $_SESSION['username'] = $username;
                 header('location: page/student/dashboard.php');
-            }else if($section == 'admin'){
+            }else if($role == 'admin'){
                 $_SESSION['username'] = $username;
                 header('location: page/admin/dashboard.php');    
             }
         }else{
-            echo 'Wrong Username, Password or Section';
+            echo 'Wrong Username, Password or Role';
         }
     }
  }

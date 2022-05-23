@@ -3,7 +3,7 @@ $(document).ready(function(){
 	load_enrolled_subject();
 });
 
-load_enrolled_subject =()=>{
+const load_enrolled_subject =()=>{
 var student_id = document.getElementById('student_id').value;
 
 	$.ajax({

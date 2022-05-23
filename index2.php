@@ -222,8 +222,6 @@ include('phpqrcode/qrlib.php');
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.js"></script>
 
-<script type="text/javascript">
 
-</script>
 </body>
 </html>
