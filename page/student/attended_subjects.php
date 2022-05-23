@@ -37,22 +37,38 @@
               <!-- form start -->
               <form>
                 <div class="card-body">
+
+                  <div class="row">
+                    <div class="col-3">
+                      <label>Date From:</label><input type="date" name="" id="attended_from" class="form-control" value="<?=$server_date_only;?>">
+                    </div>
+                     <div class="col-3">
+                      <label>Date To:</label><input type="date" name="" id="attended_to" class="form-control" value="<?=$server_date_only;?>">
+                    </div>
+                     <div class="col-6">
+                      <span style="visibility:hidden;">.</span>
+                      <p style="text-align:right;"><a href="#" class="btn btn-primary" onclick="Search()">Search <i class="fa fa-search"></a></i></p>
+                    </div>
+                  </div>
+                  <br>
+
                   <div class="row">
                     <div class="col-sm-12 col-md-6 col-6">
-                      <input type="hidden" name="student_id_to_attend" id="student_id_to_attend" value="<?=$name;?>" class="form-control-lg" disabled> 
+                      <input type="hidden" name="student_id_attended" id="student_id_attended" value="<?=$name;?>" class="form-control-lg" disabled> 
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-12">
                        <div class="card-body table-responsive p-0" style="height: 420px;">
-                <table class="table table-head-fixed text-nowrap table-hover" id="sub_to_attend">
+                <table class="table table-head-fixed text-nowrap table-hover" id="sub_attended">
                 <thead style="text-align:center;">
                     <th>#</th>
                     <th>Subject</th>
+                    <th>Status</th>
                     <th>Date Attended</th>
                     <th>File Submitted </th>
             </thead>
-            <tbody id="subject_to_attend" style="text-align:center;"></tbody>
+            <tbody id="subject_attended" style="text-align:center;"></tbody>
                 </table>
               </div>
                     </div>
@@ -74,4 +90,4 @@
 </div>
 
 <?php include 'plugins/footer.php';?>
-<?php include 'plugins/javascript/subject_to_attend_script.php';?>
+<?php include 'plugins/javascript/attended_subject_script.php';?>

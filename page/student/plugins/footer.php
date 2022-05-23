@@ -9,6 +9,7 @@
 //MODALS
 include '../../modals/logout.php';
 include '../../modals/subject_to_attend/attend.php';
+include '../../modals/attended_subject/attended.php';
 ?>
 <!-- jQuery -->
 <!-- <script src="../../plugins/jquery/jquery.min.js"></script> -->
