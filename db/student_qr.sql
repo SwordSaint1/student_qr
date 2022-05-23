@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 21, 2022 at 10:37 AM
+-- Generation Time: May 23, 2022 at 05:58 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.25
 
@@ -36,6 +36,13 @@ CREATE TABLE `attendance` (
   `qr_subj_attendance` varchar(50) DEFAULT NULL,
   `file_name` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `attendance`
+--
+
+INSERT INTO `attendance` (`id`, `student_id`, `subj_code`, `attendance`, `date_attended`, `qr_subj_attendance`, `file_name`) VALUES
+(5, 'stud01', 'eng101', 'Pending', '2022-05-23', '20220523eng101', NULL);
 
 -- --------------------------------------------------------
 
@@ -78,7 +85,8 @@ CREATE TABLE `subjects` (
 
 INSERT INTO `subjects` (`id`, `subject`, `subj_code`, `status`) VALUES
 (1, 'English', 'eng101', NULL),
-(2, 'Math', 'math101', NULL);
+(3, 'Math', 'math101', NULL),
+(4, 'Science', 'science101', NULL);
 
 -- --------------------------------------------------------
 
@@ -139,7 +147,7 @@ ALTER TABLE `user_accounts`
 -- AUTO_INCREMENT for table `attendance`
 --
 ALTER TABLE `attendance`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `student_info`
@@ -151,7 +159,7 @@ ALTER TABLE `student_info`
 -- AUTO_INCREMENT for table `subjects`
 --
 ALTER TABLE `subjects`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `user_accounts`
