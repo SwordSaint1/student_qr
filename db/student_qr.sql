@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2022 at 05:58 AM
+-- Generation Time: May 24, 2022 at 04:49 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.25
 
@@ -42,7 +42,9 @@ CREATE TABLE `attendance` (
 --
 
 INSERT INTO `attendance` (`id`, `student_id`, `subj_code`, `attendance`, `date_attended`, `qr_subj_attendance`, `file_name`) VALUES
-(5, 'stud01', 'eng101', 'Pending', '2022-05-23', '20220523eng101', NULL);
+(1, 'stud01', 'eng101', 'Pending', '2022-05-23', '20220523eng101', NULL),
+(2, 'stud01', 'math101', 'Pending', '2022-05-24', '20220524math101', NULL),
+(5, 'stud01', 'eng101', 'Pending', '2022-05-24', '20220524eng101', NULL);
 
 -- --------------------------------------------------------
 

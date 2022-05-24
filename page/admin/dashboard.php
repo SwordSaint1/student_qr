@@ -45,7 +45,10 @@
                      <div class="col-3">
                       <label>Date To:</label><input type="date" name="" id="attendance_to" class="form-control" value="<?=$server_date_only;?>">
                     </div>
-                     <div class="col-6">
+                    <div class="col-3">
+                      <label>Subject:</label><input type="text" name="" id="subject" class="form-control" >
+                    </div>
+                     <div class="col-3">
                       <span style="visibility:hidden;">.</span>
                       <p style="text-align:right;"><a href="#" class="btn btn-primary" onclick="Search_Attendance()">Search <i class="fa fa-search"></a></i></p>
                     </div>

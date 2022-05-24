@@ -8,6 +8,7 @@
 <?php
 //MODALS
 include '../../modals/logout.php';
+include '../../modals/verify_attendance/verify.php';
 ?>
 <!-- jQuery -->
 <!-- <script src="../../plugins/jquery/jquery.min.js"></script> -->

@@ -34,7 +34,7 @@ if ($method == 'attend') {
 
 	$subjqr = $dateqr.''.$scode;
 
-	$check = "SELECT * FROM attendance WHERE student_id = '$sid' AND subj_code = '$scode'";
+	$check = "SELECT * FROM attendance WHERE student_id = '$sid' AND subj_code = '$scode' AND qr_subj_attendance = '$subjqr'";
 	$stmt = $conn->prepare($check);
 	$stmt->execute();
 	if ($stmt->rowCount() > 0) {
